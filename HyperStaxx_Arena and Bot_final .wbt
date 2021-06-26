@@ -1,0 +1,1401 @@
+#VRML_SIM R2021a utf8
+WorldInfo {
+  coordinateSystem "NUE"
+}
+Viewpoint {
+  orientation -0.5410729455878482 0.6948004664420789 0.473806267776988 1.8000307926839112
+  position 4.411145524816855 4.676321708132156 -2.5024836235857166
+  follow "mobile_robot"
+  followType "Mounted Shot"
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  translation 0 -0.01 0
+  rotation 0 1 0 4.692820414042842e-06
+  floorSize 11 11
+  floorAppearance Parquetry {
+    type "light strip"
+  }
+}
+Solid {
+  translation 1.76679 0.144205 -2.57108
+  rotation -1.93382e-17 -1 2.2348e-17 -0.5236153071795862
+  children [
+    DEF shape Shape {
+      appearance PBRAppearance {
+        baseColor 1 0.219608 0.219608
+        metalness 0
+      }
+      geometry Box {
+        size 0.4 0.3 0.05
+      }
+      castShadows FALSE
+    }
+  ]
+  name "solid(5)"
+  boundingObject USE shape
+}
+DEF flags Group {
+  children [
+    YoubotFlag {
+      translation -4.81933 0 2.81478
+      rotation 0 1 0 4.07987e-06
+    }
+    YoubotFlag {
+      translation -3.72 0 -1.48
+      rotation 0 1 0 -5.307179586466759e-06
+      name "youBot flag(1)"
+    }
+    YoubotFlag {
+      translation 0.0961024 0 1.78687
+      rotation 0 -1 0 0.261797
+      name "youBot flag(2)"
+    }
+    YoubotFlag {
+      translation 3.11149 0 -0.211853
+      rotation 0 1 0 -1.8325953071795862
+      name "youBot flag(3)"
+    }
+    YoubotFlag {
+      translation 3.23054 0 -2.64645
+      rotation 0 -1 0 -5.307179586466759e-06
+      name "youBot flag(4)"
+    }
+  ]
+}
+DEF arena Group {
+  children [
+    CurvedRoadSegment {
+      translation 1.14 0.001 -0.15
+      name "road(6)"
+      width 0.28
+      numberOfLanes 1
+      roadBorderHeight 0
+      roadBorderWidth [
+        0
+      ]
+      curvatureRadius 1.5
+      appearance PBRAppearance {
+        baseColor 0 0 0
+        metalness 0
+      }
+      locked FALSE
+    }
+    CurvedRoadSegment {
+      translation 1.15 0.0011 -0.16
+      rotation 0 1 0 4.692820414042842e-06
+      name "road(20)"
+      width 0.04
+      numberOfLanes 1
+      roadBorderHeight 0
+      roadBorderWidth [
+        0
+      ]
+      curvatureRadius 1.5
+      appearance PBRAppearance {
+        metalness 0
+      }
+      locked FALSE
+    }
+    CurvedRoadSegment {
+      translation -2.89 0.0011 2.71
+      rotation 0 1 0 4.692820414042842e-06
+      name "road(22)"
+      width 0.14
+      numberOfLanes 1
+      roadBorderHeight 0
+      roadBorderWidth [
+        0
+      ]
+      curvatureRadius 1.5
+      appearance PBRAppearance {
+        metalness 0
+      }
+      locked FALSE
+    }
+    CurvedRoadSegment {
+      translation -2.9 0.0011 2.85
+      rotation 0 -1 0 1.5708
+      name "road(23)"
+      width 0.15
+      numberOfLanes 1
+      roadBorderHeight 0
+      roadBorderWidth [
+        0
+      ]
+      curvatureRadius 1.5
+      appearance PBRAppearance {
+        metalness 0
+      }
+      locked FALSE
+    }
+    CurvedRoadSegment {
+      translation 0.111098 0.0011 2.76986
+      rotation 0 1 0 -3.14
+      name "road(25)"
+      width 0.14
+      numberOfLanes 1
+      roadBorderHeight 0
+      roadBorderWidth [
+        0
+      ]
+      curvatureRadius 1.5
+      appearance PBRAppearance {
+        metalness 0
+      }
+      locked FALSE
+    }
+    CurvedRoadSegment {
+      translation -2.82 -0.0090015 2.78
+      rotation -1.22588e-06 -1 -1.22588e-06 1.5708
+      name "road(8)"
+      width 0.28
+      numberOfLanes 1
+      roadBorderHeight 0
+      roadBorderWidth [
+        0
+      ]
+      curvatureRadius 1.5
+      appearance PBRAppearance {
+        baseColor 0 0 0
+        metalness 0
+      }
+      locked FALSE
+    }
+    CurvedRoadSegment {
+      translation -2.83 0.001 2.78
+      name "road(9)"
+      width 0.28
+      numberOfLanes 1
+      roadBorderHeight 0
+      roadBorderWidth [
+        0
+      ]
+      curvatureRadius 1.5
+      appearance PBRAppearance {
+        baseColor 0 0 0
+        metalness 0
+      }
+      locked FALSE
+    }
+    CurvedRoadSegment {
+      translation 0.17 0.001 2.84
+      rotation 0 1 0 -3.1415853071795863
+      name "road(10)"
+      width 0.28
+      numberOfLanes 1
+      roadBorderHeight 0
+      roadBorderWidth [
+        0
+      ]
+      curvatureRadius 1.5
+      appearance PBRAppearance {
+        baseColor 0 0 0
+        metalness 0
+      }
+      locked FALSE
+    }
+    StraightRoadSegment {
+      translation -4.36681 0.001 1.92025
+      rotation 0 -1 0 -2.3562053071795863
+      width 0.28
+      numberOfLanes 1
+      lines []
+      rightBorder FALSE
+      leftBorder FALSE
+      length 0.7
+      appearance PBRAppearance {
+        baseColor 0 0 0
+        metalness 0
+      }
+      locked FALSE
+    }
+    StraightRoadSegment {
+      translation -3.36989 0.001 1.50879
+      rotation 0 -1 0 -2.3562053071795863
+      name "road(12)"
+      width 0.28
+      numberOfLanes 1
+      lines []
+      rightBorder FALSE
+      leftBorder FALSE
+      length 0.7
+      appearance PBRAppearance {
+        baseColor 0 0 0
+        metalness 0
+      }
+      locked FALSE
+    }
+    StraightRoadSegment {
+      translation -3.9684 0.001 1.46866
+      rotation 0 -1 0 -1.5708053071795867
+      name "road(11)"
+      width 0.28
+      numberOfLanes 1
+      lines []
+      rightBorder FALSE
+      leftBorder FALSE
+      length 0.7
+      appearance PBRAppearance {
+        baseColor 0 0 0
+        metalness 0
+      }
+      locked FALSE
+    }
+    StraightRoadSegment {
+      translation -4.32 0.001 2.82
+      rotation 0 1 0 -3.1415853071795863
+      name "road(5)"
+      width 0.28
+      numberOfLanes 1
+      rightBorder FALSE
+      leftBorder FALSE
+      length 1
+      appearance PBRAppearance {
+        baseColor 0 0 0
+        metalness 0
+      }
+      bottomTexture [
+        ""
+      ]
+      locked FALSE
+    }
+    StraightRoadSegment {
+      translation -2.92 -0.009 1.11
+      rotation 0 1 0 -3.1415853071795863
+      name "road(13)"
+      width 0.28
+      numberOfLanes 1
+      rightBorder FALSE
+      leftBorder FALSE
+      length 2.3
+      appearance PBRAppearance {
+        baseColor 0 0 0
+        metalness 0
+      }
+      bottomTexture [
+        ""
+      ]
+      locked FALSE
+    }
+    StraightRoadSegment {
+      translation -3.43 0.001 -1.32
+      rotation 0 1 0 1.5708
+      name "road(33)"
+      width 0.28
+      numberOfLanes 1
+      rightBorder FALSE
+      leftBorder FALSE
+      length 1
+      appearance PBRAppearance {
+        baseColor 0 0 0
+        metalness 0
+      }
+      bottomTexture [
+        ""
+      ]
+      locked FALSE
+    }
+    StraightRoadSegment {
+      translation -3.43 0.001 -1.59
+      rotation 0 1 0 1.5708
+      name "road(32)"
+      width 0.28
+      numberOfLanes 1
+      rightBorder FALSE
+      leftBorder FALSE
+      length 1
+      appearance PBRAppearance {
+        metalness 0
+      }
+      bottomTexture [
+        ""
+      ]
+      locked FALSE
+    }
+    StraightRoadSegment {
+      translation 1.14 0.001 -0.159999
+      rotation 0 1 0 1.5708
+      name "road(3)"
+      width 0.28
+      numberOfLanes 1
+      lines []
+      rightBorder FALSE
+      leftBorder FALSE
+      length 1.5
+      appearance PBRAppearance {
+        baseColor 0 0 0
+        metalness 0
+      }
+      locked FALSE
+    }
+    StraightRoadSegment {
+      translation 1.26 0.001 -0.169997
+      rotation 0 1 0 5.30716e-06
+      name "road(7)"
+      width 0.28
+      numberOfLanes 1
+      lines []
+      rightBorder FALSE
+      leftBorder FALSE
+      length 1.5
+      appearance PBRAppearance {
+        baseColor 0 0 0
+        metalness 0
+      }
+      locked FALSE
+    }
+    StraightRoadSegment {
+      translation 1.22 0.001 -0.159998
+      rotation 0 1 0 1.5708
+      name "road(24)"
+      width 0.28
+      numberOfLanes 1
+      lines []
+      rightBorder FALSE
+      leftBorder FALSE
+      length 1.5
+      appearance PBRAppearance {
+        baseColor 0 0 0
+        metalness 0
+      }
+      locked FALSE
+    }
+    StraightRoadSegment {
+      translation 2.63999 0.001 -0.14
+      rotation 0 1 0 -3.1415853071795863
+      name "road(4)"
+      width 0.28
+      numberOfLanes 1
+      lines []
+      rightBorder FALSE
+      leftBorder FALSE
+      length 2.5
+      appearance PBRAppearance {
+        baseColor 0 0 0
+        metalness 0
+      }
+      locked FALSE
+    }
+    StraightRoadSegment {
+      translation 2.65 0.0011 -1.06
+      rotation 0 1 0 -3.1415853071795863
+      name "road(2)"
+      width 0.04
+      numberOfLanes 1
+      lines []
+      rightBorder FALSE
+      leftBorder FALSE
+      length 1
+      appearance PBRAppearance {
+      }
+      pavementAppearance Pavement {
+        IBLStrength 100
+      }
+      bottomTexture [
+        ""
+      ]
+      locked FALSE
+    }
+    StraightRoadSegment {
+      translation -4.33783 0.0011 1.89071
+      rotation 0 -1 0 -2.315
+      name "road(14)"
+      width 0.04
+      numberOfLanes 1
+      lines []
+      rightBorder FALSE
+      leftBorder FALSE
+      length 0.65
+      appearance PBRAppearance {
+        metalness 0
+      }
+      pavementAppearance Pavement {
+        IBLStrength 100
+      }
+      bottomTexture [
+        ""
+      ]
+      locked FALSE
+    }
+    StraightRoadSegment {
+      translation -3.31241 0.0011 1.45701
+      rotation 0 1 0 2.3562
+      name "road(30)"
+      width 0.04
+      numberOfLanes 1
+      lines []
+      rightBorder FALSE
+      leftBorder FALSE
+      length 0.57
+      appearance PBRAppearance {
+        metalness 0
+      }
+      pavementAppearance Pavement {
+        IBLStrength 100
+      }
+      bottomTexture [
+        ""
+      ]
+      locked FALSE
+    }
+    StraightRoadSegment {
+      translation -3.88 0.0011 1.45
+      rotation 0 1 0 1.5708
+      name "road(26)"
+      width 0.04
+      numberOfLanes 1
+      lines []
+      rightBorder FALSE
+      leftBorder FALSE
+      length 0.58
+      appearance PBRAppearance {
+        metalness 0
+      }
+      pavementAppearance Pavement {
+        IBLStrength 100
+      }
+      bottomTexture [
+        ""
+      ]
+      locked FALSE
+    }
+    StraightRoadSegment {
+      translation -4.32999 0.0011 2.85001
+      rotation 0 1 0 -3.1415853071795863
+      name "road(27)"
+      width 0.04
+      numberOfLanes 1
+      lines []
+      rightBorder FALSE
+      leftBorder FALSE
+      length 1
+      appearance PBRAppearance {
+        metalness 0
+      }
+      pavementAppearance Pavement {
+        IBLStrength 100
+      }
+      bottomTexture [
+        ""
+      ]
+      locked FALSE
+    }
+    StraightRoadSegment {
+      translation -2.90999 0.0011 1.07001
+      rotation 0 1 0 -3.1415853071795863
+      name "road(31)"
+      width 0.04
+      numberOfLanes 1
+      lines []
+      rightBorder FALSE
+      leftBorder FALSE
+      length 2.3
+      appearance PBRAppearance {
+        metalness 0
+      }
+      pavementAppearance Pavement {
+        IBLStrength 100
+      }
+      bottomTexture [
+        ""
+      ]
+      locked FALSE
+    }
+    StraightRoadSegment {
+      translation 1.3 0.0011 1.48
+      rotation 0 1 0 -3.1415853071795863
+      name "road(15)"
+      width 0.04
+      numberOfLanes 1
+      lines []
+      rightBorder FALSE
+      leftBorder FALSE
+      length 1.62
+      appearance PBRAppearance {
+        metalness 0
+      }
+      pavementAppearance Pavement {
+        IBLStrength 100
+      }
+      bottomTexture [
+        ""
+      ]
+      locked FALSE
+    }
+    StraightRoadSegment {
+      translation 1.29 0.0011 -0.139999
+      rotation 0 1 0 1.5708
+      name "road(16)"
+      width 0.04
+      numberOfLanes 1
+      lines []
+      rightBorder FALSE
+      leftBorder FALSE
+      length 1.5
+      appearance PBRAppearance {
+        metalness 0
+      }
+      pavementAppearance Pavement {
+        IBLStrength 100
+      }
+      bottomTexture [
+        ""
+      ]
+      locked FALSE
+    }
+    StraightRoadSegment {
+      translation 0.0900002 0.0011 1.34
+      rotation 0 1 0 1.5708
+      name "road(21)"
+      width 0.04
+      numberOfLanes 1
+      lines []
+      rightBorder FALSE
+      leftBorder FALSE
+      length 1.2
+      appearance PBRAppearance {
+        metalness 0
+      }
+      pavementAppearance Pavement {
+        IBLStrength 100
+      }
+      bottomTexture [
+        ""
+      ]
+      locked FALSE
+    }
+    StraightRoadSegment {
+      translation 2.65 0.0011 -0.14
+      rotation 0 1 0 -3.1415853071795863
+      name "road(17)"
+      width 0.04
+      numberOfLanes 1
+      lines []
+      rightBorder FALSE
+      leftBorder FALSE
+      length 1
+      appearance PBRAppearance {
+        metalness 0
+      }
+      pavementAppearance Pavement {
+        IBLStrength 100
+      }
+      bottomTexture [
+        ""
+      ]
+      locked FALSE
+    }
+    StraightRoadSegment {
+      translation 2.65 0.0011 -0.38
+      rotation 0 1 0 -3.1415853071795863
+      name "road(18)"
+      width 0.04
+      numberOfLanes 1
+      lines []
+      rightBorder FALSE
+      leftBorder FALSE
+      length 1
+      appearance PBRAppearance {
+        metalness 0
+      }
+      pavementAppearance Pavement {
+        IBLStrength 100
+      }
+      bottomTexture [
+        ""
+      ]
+      locked FALSE
+    }
+    StraightRoadSegment {
+      translation 2.65 0.0011 -1.3
+      rotation 0 1 0 -3.1415853071795863
+      name "road(19)"
+      width 0.04
+      numberOfLanes 1
+      lines []
+      rightBorder FALSE
+      leftBorder FALSE
+      length 1
+      appearance PBRAppearance {
+        metalness 0
+      }
+      pavementAppearance Pavement {
+        IBLStrength 100
+      }
+      bottomTexture [
+        ""
+      ]
+      locked FALSE
+    }
+    StraightRoadSegment {
+      translation 0.15423 0.001 1.3453
+      rotation 0 -1 0 -1.5708053071795867
+      name "road(1)"
+      width 0.28
+      numberOfLanes 1
+      lines []
+      rightBorder FALSE
+      leftBorder FALSE
+      length 1
+      appearance PBRAppearance {
+        baseColor 0 0 0
+        metalness 0
+      }
+      locked FALSE
+    }
+    Solid {
+      translation 2.44059 0.144205 -2.67805
+      rotation 8.39664e-13 1 -1.73149e-12 7.94985e-06
+      children [
+        DEF shape Shape {
+          appearance PBRAppearance {
+            baseColor 1 0.219608 0.219608
+            metalness 0
+          }
+          geometry Box {
+            size 1 0.3 0.05
+          }
+          castShadows FALSE
+        }
+      ]
+      name "solid(1)"
+      boundingObject USE shape
+    }
+    Solid {
+      translation 1.25059 0.144205 -1.99805
+      rotation 8.39664e-13 1 -1.73149e-12 7.94985e-06
+      children [
+        DEF shape Shape {
+          appearance PBRAppearance {
+            baseColor 1 0.219608 0.219608
+            metalness 0
+          }
+          geometry Box {
+            size 1 0.3 0.05
+          }
+          castShadows FALSE
+        }
+      ]
+      name "solid(9)"
+      boundingObject USE shape
+    }
+    Solid {
+      translation -0.40941 0.144205 -2.74805
+      rotation 8.39664e-13 1 -1.73149e-12 7.94985e-06
+      children [
+        DEF shape Shape {
+          appearance PBRAppearance {
+            baseColor 1 0.219608 0.219608
+            metalness 0
+          }
+          geometry Box {
+            size 1 0.3 0.05
+          }
+          castShadows FALSE
+        }
+      ]
+      name "solid(23)"
+      boundingObject USE shape
+    }
+    Solid {
+      translation -1.25941 0.144205 -3.25805
+      rotation 8.39664e-13 1 -1.73149e-12 7.94985e-06
+      children [
+        DEF shape Shape {
+          appearance PBRAppearance {
+            baseColor 1 0.219608 0.219608
+            metalness 0
+          }
+          geometry Box {
+            size 1.6 0.3 0.05
+          }
+          castShadows FALSE
+        }
+      ]
+      name "solid(13)"
+      boundingObject USE shape
+    }
+    Solid {
+      translation -2.55461 0.144205 -2.96639
+      rotation 1.93384e-17 1 -2.23481e-17 0.523607
+      children [
+        DEF shape Shape {
+          appearance PBRAppearance {
+            baseColor 1 0.219608 0.219608
+            metalness 0
+          }
+          geometry Box {
+            size 1.2 0.3 0.05
+          }
+          castShadows FALSE
+        }
+      ]
+      name "solid(14)"
+      boundingObject USE shape
+    }
+    Solid {
+      translation -3.06193 0.144205 -2.21835
+      rotation 1.02201e-17 1 -3.54493e-18 1.5708
+      children [
+        DEF shape Shape {
+          appearance PBRAppearance {
+            baseColor 1 0.219608 0.219608
+            metalness 0
+          }
+          geometry Box {
+            size 0.97 0.3 0.05
+          }
+          castShadows FALSE
+        }
+      ]
+      name "solid(15)"
+      boundingObject USE shape
+    }
+    Solid {
+      translation 2.38495 0.144205 -1.24804
+      rotation 1.02201e-17 1 -3.54495e-18 1.57081
+      children [
+        DEF shape Shape {
+          appearance PBRAppearance {
+            baseColor 1 0.219608 0.219608
+            metalness 0
+          }
+          geometry Box {
+            size 0.3 0.3 0.05
+          }
+          castShadows FALSE
+        }
+      ]
+      name "solid(2)"
+      boundingObject USE shape
+    }
+    Solid {
+      translation 2.38391 0.144205 -1.94804
+      rotation 1.02201e-17 1 -3.54495e-18 1.57081
+      children [
+        DEF shape Shape {
+          appearance PBRAppearance {
+            baseColor 1 0.219608 0.219608
+            metalness 0
+          }
+          geometry Box {
+            size 0.3 0.3 0.05
+          }
+          castShadows FALSE
+        }
+      ]
+      name "solid(4)"
+      boundingObject USE shape
+    }
+    Solid {
+      translation 0.607867 0.144205 -2.09216
+      rotation -5.57372e-18 1 2.90248e-17 -0.5235853071795864
+      children [
+        DEF shape Shape {
+          appearance PBRAppearance {
+            baseColor 1 0.219608 0.219608
+            metalness 0
+          }
+          geometry Box {
+            size 0.4 0.3 0.05
+          }
+          castShadows FALSE
+        }
+      ]
+      name "solid(11)"
+      boundingObject USE shape
+    }
+    Solid {
+      translation 0.274244 0.144205 -2.65428
+      rotation -5.57372e-18 1 2.90248e-17 -0.5235853071795864
+      children [
+        DEF shape Shape {
+          appearance PBRAppearance {
+            baseColor 1 0.219608 0.219608
+            metalness 0
+          }
+          geometry Box {
+            size 0.4 0.3 0.05
+          }
+          castShadows FALSE
+        }
+      ]
+      name "solid(22)"
+      boundingObject USE shape
+    }
+    Solid {
+      translation 0.436211 0.144205 -2.37716
+      rotation 3.54504e-18 1 1.02204e-17 -1.5707853071795865
+      children [
+        DEF shape Shape {
+          appearance PBRAppearance {
+            baseColor 1 0.219608 0.219608
+            metalness 0
+          }
+          geometry Box {
+            size 0.4 0.3 0.05
+          }
+          castShadows FALSE
+        }
+      ]
+      name "solid(3)"
+      boundingObject USE shape
+    }
+    Solid {
+      translation 1.91153 0.144205 -2.1004
+      rotation -1.93382e-17 -1 2.2348e-17 -0.5236153071795862
+      children [
+        DEF shape Shape {
+          appearance PBRAppearance {
+            baseColor 1 0.219608 0.219608
+            metalness 0
+          }
+          geometry Box {
+            size 0.4 0.3 0.05
+          }
+          castShadows FALSE
+        }
+      ]
+      name "solid(8)"
+      boundingObject USE shape
+    }
+    Solid {
+      translation 2.9243 0.144205 -1.56805
+      rotation 1.02201e-17 1 -3.54495e-18 1.57081
+      children [
+        DEF shape Shape {
+          appearance PBRAppearance {
+            baseColor 1 0.219608 0.219608
+            metalness 0
+          }
+          geometry Box {
+            size 0.3 0.3 0.05
+          }
+          castShadows FALSE
+        }
+      ]
+      name "solid(6)"
+      boundingObject USE shape
+    }
+    Solid {
+      translation 2.9143 0.144205 -2.54805
+      rotation 1.02201e-17 1 -3.54495e-18 1.57081
+      children [
+        DEF shape Shape {
+          appearance PBRAppearance {
+            baseColor 1 0.219608 0.219608
+            metalness 0
+          }
+          geometry Box {
+            size 0.3 0.3 0.05
+          }
+          castShadows FALSE
+        }
+      ]
+      name "solid(7)"
+      boundingObject USE shape
+    }
+  ]
+}
+Robot {
+  translation -2.876830289907179 0.028291189723237027 -1.587960203051506
+  rotation -7.509290871659353e-05 0.99999999678994 2.7949505484179792e-05 -1.5463991464984737
+  scale 0.7 0.7 0.7
+  children [
+    DEF base_link Shape {
+      appearance PBRAppearance {
+        baseColor 0.4 0.5 0.8
+        metalness 0
+      }
+      geometry Box {
+        size 0.2 0.055 0.15
+      }
+    }
+    LED {
+      translation 0 0.03 0
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0 0 0
+            metalness 0
+            emissiveIntensity 2
+          }
+          geometry Sphere {
+            radius 0.02
+          }
+        }
+      ]
+      name "led_1"
+      boundingObject Sphere {
+        radius 0.02
+      }
+    }
+    LED {
+      translation 0 0.03 0.05
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0 0 0
+            metalness 0
+            emissiveIntensity 2
+          }
+          geometry Sphere {
+            radius 0.02
+          }
+        }
+      ]
+      name "led_2"
+      boundingObject Sphere {
+        radius 0.02
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        position 3329.3388441100074
+        axis 0 0 -1
+        anchor 0.07 0 0.09
+      }
+      device [
+        RotationalMotor {
+          name "front_right_wheel"
+        }
+      ]
+      endPoint Solid {
+        translation 0.06998619309867306 3.671250451977594e-05 0.0899999990839524
+        rotation 0.8738519559724989 0.34365281976241024 0.3439265888418375 1.7044446582579162
+        children [
+          DEF wheel_shape Shape {
+            appearance PBRAppearance {
+              baseColor 0.8 0.5 0
+              metalness 0
+            }
+            geometry Cylinder {
+              height 0.03
+              radius 0.055
+            }
+          }
+        ]
+        name "front_right_wheel"
+        boundingObject USE wheel_shape
+        physics DEF wheel_physics Physics {
+        }
+        locked TRUE
+        linearVelocity -3.730470518874125e-11 1.3661306811168069e-08 -4.021889928836524e-10
+        angularVelocity -1.1135578145808122e-08 -2.007647684136536e-09 3.28784888870737e-10
+      }
+    }
+    LED {
+      translation 0 0.03 -0.05
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0 0 0
+            metalness 0
+            emissiveIntensity 2
+          }
+          geometry Sphere {
+            radius 0.02
+          }
+        }
+      ]
+      name "led_0"
+      boundingObject Sphere {
+        radius 0.02
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        position 3329.3519188116784
+        axis 0 0 -1
+        anchor -0.07 0 0.09
+      }
+      device [
+        RotationalMotor {
+          name "rear_right_wheel"
+        }
+      ]
+      endPoint Solid {
+        translation -0.07000846208374524 2.1714664275250927e-05 0.08999999949702453
+        rotation 0.8777953610522942 0.3385945708510577 0.3388643101674484 1.6999809688573326
+        children [
+          USE wheel_shape
+        ]
+        name "rear_right_wheel"
+        boundingObject USE wheel_shape
+        physics USE wheel_physics
+        locked TRUE
+        linearVelocity 2.3276630051971004e-11 1.3731712704307466e-08 -4.069499844951702e-10
+        angularVelocity -1.127841728121578e-08 -2.0076533865620465e-09 3.27124914977693e-10
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        position 3102.428465574379
+        axis 0 0 -1
+        anchor 0.07 0 -0.09
+      }
+      device [
+        RotationalMotor {
+          name "front_left_wheel"
+        }
+      ]
+      endPoint Solid {
+        translation 0.07002765352841252 2.7534625089821895e-05 -0.09000000094144744
+        rotation -0.6178627253553655 -0.5557667371260888 -0.5562094807899818 4.24920579296764
+        children [
+          USE wheel_shape
+        ]
+        name "front_left_wheel"
+        boundingObject USE wheel_shape
+        physics USE wheel_physics
+        locked TRUE
+        linearVelocity -3.727074989193328e-11 1.3717105069845553e-08 -1.2480845253359659e-11
+        angularVelocity 5.3458719502719e-10 -2.0070883103995134e-09 3.7297108942177375e-11
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        position 3102.4142070211374
+        axis 0 0 -1
+        anchor -0.07 0 -0.09
+      }
+      device [
+        RotationalMotor {
+          name "rear_left_wheel"
+        }
+      ]
+      endPoint Solid {
+        translation -0.06998370643439648 1.6383564324138436e-05 -0.09000000053245305
+        rotation -0.6123840263943401 -0.5587880264146693 -0.5592331765486155 4.241253444097795
+        children [
+          USE wheel_shape
+        ]
+        name "rear_left_wheel"
+        boundingObject USE wheel_shape
+        physics USE wheel_physics
+        locked TRUE
+        linearVelocity 2.2247009113663495e-11 1.3460567167991626e-08 -4.6671496028167015e-11
+        angularVelocity -6.770780577071339e-10 -2.007148306697287e-09 6.147635238040902e-11
+      }
+    }
+    DistanceSensor {
+      translation 0.1 0.03 0
+      children [
+        DEF wall_shape Shape {
+          appearance PBRAppearance {
+            baseColor 0 1 1
+            metalness 0
+          }
+          geometry Box {
+            size 0.01 0.01 0.01
+          }
+        }
+      ]
+      name "ds_front"
+      boundingObject USE wall_shape
+      physics DEF wall_physics Physics {
+      }
+      lookupTable [
+        0 0 0
+        0.3 1000 0
+      ]
+    }
+    DistanceSensor {
+      translation 0.1 -0.027532 0.07
+      rotation 0 0 1 -1.57
+      children [
+        DEF ir_shape Shape {
+          appearance PBRAppearance {
+            baseColor 0 1 1
+            metalness 0
+          }
+          geometry Box {
+            size 0.01 0.01 0.01
+          }
+        }
+      ]
+      name "ir_ext_right"
+      boundingObject USE ir_shape
+      physics DEF ir_phyisics Physics {
+      }
+      lookupTable [
+        0 0 0
+        0.05 1000 0
+      ]
+      type "infra-red"
+    }
+    DistanceSensor {
+      translation 0 0.03 -0.075
+      rotation 0 1 0 1.57
+      children [
+        DEF wall_shape Shape {
+          appearance PBRAppearance {
+            baseColor 0 1 1
+            metalness 0
+          }
+          geometry Box {
+            size 0.01 0.01 0.01
+          }
+        }
+      ]
+      name "ds_left"
+      boundingObject USE wall_shape
+      physics DEF wall_physics Physics {
+      }
+      lookupTable [
+        0 0 0
+        0.3 1000 0
+      ]
+    }
+    DistanceSensor {
+      translation -0.000119449 0.03 0.075
+      rotation 0 1 0 -1.57
+      children [
+        DEF wall_shape Shape {
+          appearance PBRAppearance {
+            baseColor 0 1 1
+            metalness 0
+          }
+          geometry Box {
+            size 0.01 0.01 0.01
+          }
+        }
+      ]
+      name "ds_right"
+      boundingObject USE wall_shape
+      physics DEF wall_physics Physics {
+      }
+      lookupTable [
+        0 0 0
+        0.3 1000 0
+      ]
+    }
+    DistanceSensor {
+      translation -0.1 -0.0276913 0.07
+      rotation 0 0 1 -1.57
+      children [
+        DEF ir_shape Shape {
+          appearance PBRAppearance {
+            baseColor 0 1 1
+            metalness 0
+          }
+          geometry Box {
+            size 0.01 0.01 0.01
+          }
+        }
+      ]
+      name "ir_ext_right_rear"
+      boundingObject USE ir_shape
+      physics DEF ir_phyisics Physics {
+      }
+      lookupTable [
+        0 0 0
+        0.05 1000 0
+      ]
+      type "infra-red"
+    }
+    DistanceSensor {
+      translation 0.1 -0.027531 -0.013
+      rotation 0 0 1 -1.57
+      children [
+        DEF ir_shape Shape {
+          appearance PBRAppearance {
+            baseColor 0 1 1
+            metalness 0
+          }
+          geometry Box {
+            size 0.01 0.01 0.01
+          }
+        }
+      ]
+      name "ir_mid_left"
+      boundingObject USE ir_shape
+      physics DEF ir_phyisics Physics {
+      }
+      lookupTable [
+        0 0 0
+        0.05 1000 0
+      ]
+      type "infra-red"
+    }
+    DistanceSensor {
+      translation 6.82932e-09 -0.027611 -0.063
+      rotation 0 0 1 -1.57
+      children [
+        DEF ir_shape Shape {
+          appearance PBRAppearance {
+            baseColor 0 1 1
+            metalness 0
+          }
+          geometry Box {
+            size 0.01 0.01 0.01
+          }
+        }
+      ]
+      name "ir_mid_left_rear"
+      boundingObject USE ir_shape
+      physics DEF ir_phyisics Physics {
+      }
+      lookupTable [
+        0 0 0
+        0.05 1000 0
+      ]
+      type "infra-red"
+    }
+    DistanceSensor {
+      translation -0.1 -0.0276913 -0.07
+      rotation 0 0 1 -1.57
+      children [
+        DEF ir_shape Shape {
+          appearance PBRAppearance {
+            baseColor 0 1 1
+            metalness 0
+          }
+          geometry Box {
+            size 0.01 0.01 0.01
+          }
+        }
+      ]
+      name "ir_ext_left_rear"
+      boundingObject USE ir_shape
+      physics DEF ir_phyisics Physics {
+      }
+      lookupTable [
+        0 0 0
+        0.05 1000 0
+      ]
+      type "infra-red"
+    }
+    DistanceSensor {
+      translation 0.1 -0.027531 -0.003
+      rotation 0 0 1 -1.57
+      children [
+        DEF ir_shape Shape {
+          appearance PBRAppearance {
+            baseColor 0 1 1
+            metalness 0
+          }
+          geometry Box {
+            size 0.01 0.01 0.01
+          }
+        }
+      ]
+      name "ir_mid"
+      boundingObject USE ir_shape
+      physics DEF ir_phyisics Physics {
+      }
+      lookupTable [
+        0 0 0
+        0.05 1000 0
+      ]
+      type "infra-red"
+    }
+    DistanceSensor {
+      translation 0.1 -0.027531 0.007
+      rotation 0 0 1 -1.57
+      children [
+        DEF ir_shape Shape {
+          appearance PBRAppearance {
+            baseColor 0 1 1
+            metalness 0
+          }
+          geometry Box {
+            size 0.01 0.01 0.01
+          }
+        }
+      ]
+      name "ir_mid_right"
+      boundingObject USE ir_shape
+      physics DEF ir_phyisics Physics {
+      }
+      lookupTable [
+        0 0 0
+        0.05 1000 0
+      ]
+      type "infra-red"
+    }
+    DistanceSensor {
+      translation 6.82932e-09 -0.027611 -0.003
+      rotation 0 0 1 -1.57
+      children [
+        DEF ir_shape Shape {
+          appearance PBRAppearance {
+            baseColor 0 1 1
+            metalness 0
+          }
+          geometry Box {
+            size 0.01 0.01 0.01
+          }
+        }
+      ]
+      name "ir_mid_rear"
+      boundingObject USE ir_shape
+      physics DEF ir_phyisics Physics {
+      }
+      lookupTable [
+        0 0 0
+        0.05 1000 0
+      ]
+      type "infra-red"
+    }
+    DistanceSensor {
+      translation -3.17068e-09 -0.027611 0.067
+      rotation 0 0 1 -1.57
+      children [
+        DEF ir_shape Shape {
+          appearance PBRAppearance {
+            baseColor 0 1 1
+            metalness 0
+          }
+          geometry Box {
+            size 0.01 0.01 0.01
+          }
+        }
+      ]
+      name "ir_mid_right_rear"
+      boundingObject USE ir_shape
+      physics DEF ir_phyisics Physics {
+      }
+      lookupTable [
+        0 0 0
+        0.05 1000 0
+      ]
+      type "infra-red"
+    }
+    DistanceSensor {
+      translation 0.1 -0.027532 -0.07
+      rotation 0 0 1 -1.57
+      children [
+        DEF ir_shape Shape {
+          appearance PBRAppearance {
+            baseColor 0 1 1
+            metalness 0
+          }
+          geometry Box {
+            size 0.01 0.01 0.01
+          }
+        }
+      ]
+      name "ir_ext_left"
+      boundingObject USE ir_shape
+      physics DEF ir_phyisics Physics {
+      }
+      lookupTable [
+        0 0 0
+        0.05 1000 0
+      ]
+      type "infra-red"
+    }
+  ]
+  name "mobile_robot"
+  boundingObject USE base_link
+  physics Physics {
+  }
+  controller "my_controller"
+  linearVelocity -7.586607323796719e-12 -2.1157192270652514e-10 -2.1693355983897315e-10
+  angularVelocity 4.2956688160933205e-13 -2.007611093754841e-09 4.7421242983155084e-11
+}
